@@ -22,6 +22,7 @@ class Extractor(object):
         self.logger.log(logging.INFO, ' '.join(str(mssg) for mssg in message))
 
     def _download_page(self):
+        # download webpage
         self.log('downloading webpage')
         req = requests.get(self.url)
         self.source = req.content
