@@ -11,4 +11,3 @@ Usage
 	cd tbl_extract
 	python tbl_extract.py <url>
 
-
