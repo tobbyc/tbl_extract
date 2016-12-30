@@ -38,9 +38,8 @@ class Extractor(object):
         sys.exit(1)
 
     def _get_table_row(self, table):
-
-        self.log('extracting table data')
         
+        self.log('extracting table data')
         rows = table.findAll('tr')
         # more than likely the headers are the first row in a table
         headers = [i.text for i in rows[0].findAll('th')]
