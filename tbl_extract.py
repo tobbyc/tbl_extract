@@ -11,7 +11,6 @@ class Extractor(object):
     def __init__(self, url):
         self.url = url
         self.setup_logging()
-        #self.validate_path(file)
         self._download_page()
         
     def setup_logging(self, level=logging.INFO):
@@ -39,7 +38,6 @@ class Extractor(object):
 
     def _get_table_row(self, table):
 
-        #table = self.extract_tables_from_page()
         self.log('extracting table data')
         
         rows = table.findAll('tr')
@@ -90,9 +88,4 @@ if __name__ == '__main__':
     #test_url = 'http://www.w3schools.com/html/html_tables.asp'
     table = Extractor(url)
     table.extract_tables()
-
-
-
-
-
 
