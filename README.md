@@ -12,4 +12,3 @@ Usage
 	python tbl_extract.py <url>
 
 
-
