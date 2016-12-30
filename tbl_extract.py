@@ -1,6 +1,5 @@
 import csv
 import sys
-import os.path
 import requests
 import logging
 import argparse
