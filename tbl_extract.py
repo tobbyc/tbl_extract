@@ -79,7 +79,7 @@ class Extractor(object):
             data = self._get_table_row(table)
             self.export_item(data, 'table{}.csv'.format(no+1))
 
-
+            
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = 'tbl_extract')
     parser.add_argument('url', help='url to extract table from')
@@ -90,9 +90,3 @@ if __name__ == '__main__':
     #test_url = 'http://www.w3schools.com/html/html_tables.asp'
     table = Extractor(url)
     table.extract_tables()
-
-
-
-
-
-
